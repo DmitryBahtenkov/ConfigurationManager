@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationManager.Core.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationManager.WebApp", "ConfigurationManager.WebApp\ConfigurationManager.WebApp.csproj", "{20E75AA9-54E3-457E-876D-9E3D0D1AC7F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationManager.Tests", "ConfigurationManager.Tests\ConfigurationManager.Tests.csproj", "{D79F72B1-7915-40A9-A964-9BC0410518A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationManager.Framework", "ConfigurationManager.Framework\ConfigurationManager.Framework.csproj", "{9250BFA3-93E7-43DB-8F58-963838F3D91A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,5 +38,13 @@ Global
 		{20E75AA9-54E3-457E-876D-9E3D0D1AC7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20E75AA9-54E3-457E-876D-9E3D0D1AC7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20E75AA9-54E3-457E-876D-9E3D0D1AC7F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D79F72B1-7915-40A9-A964-9BC0410518A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D79F72B1-7915-40A9-A964-9BC0410518A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D79F72B1-7915-40A9-A964-9BC0410518A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D79F72B1-7915-40A9-A964-9BC0410518A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9250BFA3-93E7-43DB-8F58-963838F3D91A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9250BFA3-93E7-43DB-8F58-963838F3D91A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9250BFA3-93E7-43DB-8F58-963838F3D91A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9250BFA3-93E7-43DB-8F58-963838F3D91A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
