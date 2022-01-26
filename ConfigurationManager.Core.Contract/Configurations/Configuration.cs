@@ -4,8 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
+using ConfigurationManager.Core.Contract.Models;
+using ConfigurationManager.Core.Contract.Projects;
 
-namespace ConfigurationManager.Core.Contract.Models;
+namespace ConfigurationManager.Core.Contract.Configurations;
 
 /// <summary>
 /// Configuration for project witn env

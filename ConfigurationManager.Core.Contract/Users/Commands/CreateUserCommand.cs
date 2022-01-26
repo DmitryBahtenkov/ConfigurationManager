@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using ConfigurationManager.Framework.CQRS;
 
-namespace ConfigurationManager.Core.Contract.User.Commands
+namespace ConfigurationManager.Core.Contract.Users.Commands
 {
     public class CreateUserCommand : ICommand<User>
     {

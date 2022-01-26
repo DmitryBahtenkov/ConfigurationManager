@@ -1,6 +1,7 @@
 using ConfigurationManager.Core.Contract.Models;
+using ConfigurationManager.Core.Contract.Projects;
 
-namespace ConfigurationManager.Core.Contract.User;
+namespace ConfigurationManager.Core.Contract.Users;
 
 public class User : BaseModel
 {

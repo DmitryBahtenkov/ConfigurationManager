@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ConfigurationManager.Core.Contract.User.Commands;
+namespace ConfigurationManager.Core.Contract.Users.Commands;
 public record UpdateUserCommand
 {
     [Required]

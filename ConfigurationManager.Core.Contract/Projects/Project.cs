@@ -3,8 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ConfigurationManager.Core.Contract.Models;
+using ConfigurationManager.Core.Contract.Users;
 
-namespace ConfigurationManager.Core.Contract.Models;
+namespace ConfigurationManager.Core.Contract.Projects;
 
 public class Project : BaseModel
 {
