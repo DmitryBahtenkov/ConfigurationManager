@@ -225,6 +225,21 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "ConfigurationManager.Framework/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MediatR": "10.0.1",
+          "MediatR.Extensions.Microsoft.DependencyInjection": "10.0.1",
+          "Microsoft.EntityFrameworkCore": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/ConfigurationManager.Framework.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ConfigurationManager.Framework.dll": {}
+        }
       }
     }
   },
@@ -593,10 +608,16 @@
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "ConfigurationManager.Framework/1.0.0": {
+      "type": "project",
+      "path": "../ConfigurationManager.Framework/ConfigurationManager.Framework.csproj",
+      "msbuildProject": "../ConfigurationManager.Framework/ConfigurationManager.Framework.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "ConfigurationManager.Framework >= 1.0.0",
       "MediatR >= 10.0.1",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 10.0.1",
       "Microsoft.EntityFrameworkCore >= 6.0.1"
@@ -634,7 +655,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "c:\\Users\\Andrew\\Documents\\Workspace\\Sharp\\ConfigurationManager\\ConfigurationManager.Framework\\ConfigurationManager.Framework.csproj": {
+              "projectPath": "c:\\Users\\Andrew\\Documents\\Workspace\\Sharp\\ConfigurationManager\\ConfigurationManager.Framework\\ConfigurationManager.Framework.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

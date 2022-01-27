@@ -1,0 +1,12 @@
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Framework\bin\Debug\net6.0\ConfigurationManager.Framework.deps.json
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Framework\bin\Debug\net6.0\ConfigurationManager.Framework.dll
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Framework\bin\Debug\net6.0\ref\ConfigurationManager.Framework.dll
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Framework\bin\Debug\net6.0\ConfigurationManager.Framework.pdb
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Framework\obj\Debug\net6.0\ConfigurationManager.Framework.csproj.AssemblyReference.cache
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Framework\obj\Debug\net6.0\ConfigurationManager.Framework.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Framework\obj\Debug\net6.0\ConfigurationManager.Framework.AssemblyInfoInputs.cache
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Framework\obj\Debug\net6.0\ConfigurationManager.Framework.AssemblyInfo.cs
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Framework\obj\Debug\net6.0\ConfigurationManager.Framework.csproj.CoreCompileInputs.cache
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Framework\obj\Debug\net6.0\ConfigurationManager.Framework.dll
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Framework\obj\Debug\net6.0\ref\ConfigurationManager.Framework.dll
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Framework\obj\Debug\net6.0\ConfigurationManager.Framework.pdb

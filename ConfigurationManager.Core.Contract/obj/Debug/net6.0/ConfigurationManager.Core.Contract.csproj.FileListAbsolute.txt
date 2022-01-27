@@ -1,0 +1,15 @@
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Core.Contract\bin\Debug\net6.0\ConfigurationManager.Core.Contract.deps.json
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Core.Contract\bin\Debug\net6.0\ConfigurationManager.Core.Contract.dll
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Core.Contract\bin\Debug\net6.0\ref\ConfigurationManager.Core.Contract.dll
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Core.Contract\bin\Debug\net6.0\ConfigurationManager.Core.Contract.pdb
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Core.Contract\bin\Debug\net6.0\ConfigurationManager.Framework.dll
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Core.Contract\bin\Debug\net6.0\ConfigurationManager.Framework.pdb
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Core.Contract\obj\Debug\net6.0\ConfigurationManager.Core.Contract.csproj.AssemblyReference.cache
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Core.Contract\obj\Debug\net6.0\ConfigurationManager.Core.Contract.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Core.Contract\obj\Debug\net6.0\ConfigurationManager.Core.Contract.AssemblyInfoInputs.cache
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Core.Contract\obj\Debug\net6.0\ConfigurationManager.Core.Contract.AssemblyInfo.cs
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Core.Contract\obj\Debug\net6.0\ConfigurationManager.Core.Contract.csproj.CoreCompileInputs.cache
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Core.Contract\obj\Debug\net6.0\ConfigurationManager.Core.Contract.csproj.CopyComplete
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Core.Contract\obj\Debug\net6.0\ConfigurationManager.Core.Contract.dll
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Core.Contract\obj\Debug\net6.0\ref\ConfigurationManager.Core.Contract.dll
+c:\Users\Andrew\Documents\Workspace\Sharp\ConfigurationManager\ConfigurationManager.Core.Contract\obj\Debug\net6.0\ConfigurationManager.Core.Contract.pdb

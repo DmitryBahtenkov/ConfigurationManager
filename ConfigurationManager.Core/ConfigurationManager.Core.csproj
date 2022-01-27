@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ConfigurationManager.Framework\ConfigurationManager.Framework.csproj" />
+    <ProjectReference Include="..\ConfigurationManager.Core.Contract\ConfigurationManager.Core.Contract.csproj" />
   </ItemGroup>
 
 </Project>
