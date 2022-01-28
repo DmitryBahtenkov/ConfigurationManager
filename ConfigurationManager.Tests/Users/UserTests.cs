@@ -56,4 +56,16 @@ public class UserTests
         Assert.NotNull(result);
         Assert.True(result.IsArchived);
     }
+
+    public async Task UpdateUserTest()
+    {
+        var command = new UpdateUserCommand()
+        {
+            Id = UsersTestData.UpdateUserDocument.Id,
+            Login = "new@new.new",
+            Password = "12345",
+        };
+
+        
+    }
 }

@@ -31,6 +31,6 @@ public sealed class TestContext : DatabaseContext
             .Entity<Configuration>()
             .Property(p => p.Json)
             .HasConversion(c => c.ToString(), c => JsonDocument.Parse(c ?? "{}", default));
-        modelBuilder.Entity<User>().HasData(UsersTestData.ExistUserDocument, UsersTestData.DeletionUserDocument);
+        modelBuilder.Entity<User>().HasData(UsersTestData.ExistUserDocument, UsersTestData.DeletionUserDocument, UsersTestData.UpdateUserDocument);
     } 
 }

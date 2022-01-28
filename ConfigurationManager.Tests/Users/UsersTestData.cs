@@ -34,4 +34,19 @@ public static class UsersTestData
             };
         }
     }
+
+    public static User UpdateUserDocument
+    {
+        get
+        {
+            PasswordHelper.GeneratePassword("1234", out var hash, out var salt);
+            return new User 
+            {
+                Id = 3,
+                Password = hash,
+                Salt = salt,
+                Login = "testtt@test.test"
+            };
+        }
+    }
 }
