@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using ConfigurationManager.WebApp.ViewModels;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Logging;
+
+namespace ConfigurationManager.WebApp.Pages
+{
+    public class Login : PageModel
+    {
+        [BindProperty]
+        public LoginViewModel LoginViewModel { get; set; } = new();
+        private readonly ILogger<Login> _logger;
+
+        public Login(ILogger<Login> logger)
+        {
+            _logger = logger;
+        }
+
+        public void OnGet()
+        {
+        }
+
+        public async Task OnPost()
+        {
+            
+        }
+    }
+}

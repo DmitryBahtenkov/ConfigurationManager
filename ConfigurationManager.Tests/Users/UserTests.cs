@@ -1,6 +1,7 @@
 using System.Threading.Tasks;
 using ConfigurationManager.Core.Contract.Users;
 using ConfigurationManager.Core.Contract.Users.Commands;
+using ConfigurationManager.Core.Helpers;
 using ConfigurationManager.Framework.Exceptions;
 using MediatR;
 using Xunit;
@@ -57,6 +58,7 @@ public class UserTests
         Assert.True(result.IsArchived);
     }
 
+    [Fact]
     public async Task UpdateUserTest()
     {
         var command = new UpdateUserCommand()
@@ -66,6 +68,10 @@ public class UserTests
             Password = "12345",
         };
 
-        
+        var result = await _mediator.Send<User>(command);
+
+        Assert.NotNull(result);
+        Assert.Equal(command.Login, result.Login);
+        Assert.True(PasswordHelper.ComparePassword(result, "12345"));
     }
 }

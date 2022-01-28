@@ -21,9 +21,9 @@ public static class PasswordHelper
     public static bool ComparePassword(User user, string password)
     {
         var md = SHA512.Create();
-        var saltedPass = password + user.Password + user.Salt;
+        var saltedPass = password + user.Salt;
         var hash = Convert.ToBase64String(md.ComputeHash(Encoding.Unicode.GetBytes(saltedPass)));
 
-        return hash == saltedPass;
+        return hash == user.Password;
     }
 }
