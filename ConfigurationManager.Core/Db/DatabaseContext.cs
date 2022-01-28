@@ -15,6 +15,7 @@ public class DatabaseContext : DbContext, IContext
     public virtual DbSet<Project> Projects { get; set; }
     public virtual DbSet<Configuration> Configurations { get; set; }
 
+
     public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {
         _ = ChangeTracker

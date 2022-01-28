@@ -9,40 +9,51 @@ namespace ConfigurationManager.Tests.Users;
 
 public class UserTests
 {
-		private readonly IMediator _mediator;
+    private readonly IMediator _mediator;
 
-		public UserTests(IMediator mediator)
-		{
-			_mediator = mediator;
-		}
+    public UserTests(IMediator mediator)
+    {
+        _mediator = mediator;
+    }
 
-        [Fact]
-        public async Task CreateValidUserTest()
+    [Fact]
+    public async Task CreateValidUserTest()
+    {
+        var command = new CreateUserCommand
         {
-            var command = new CreateUserCommand
-            {
-                Login = "aa@a.a",
-                Password = "1234",
-            };
+            Login = "aa@a.a",
+            Password = "1234",
+        };
 
-            var result = await _mediator.Send<User>(command);
+        var result = await _mediator.Send<User>(command);
 
-            Assert.NotEqual(0, result.Id);
-            Assert.NotEmpty(result.Salt);
-            Assert.NotEmpty(result.Password);
-        }
+        Assert.NotEqual(0, result.Id);
+        Assert.NotEmpty(result.Salt);
+        Assert.NotEmpty(result.Password);
+    }
 
-        [Fact]
-        public async Task CreateDuplicateUserTest()
+    [Fact]
+    public async Task CreateDuplicateUserTest()
+    {
+        var command = new CreateUserCommand
         {
-            var command = new CreateUserCommand
-            {
-                Login = UsersTestData.ExistUserDocument.Login,
-                Password = "1234",
-            };
+            Login = UsersTestData.ExistUserDocument.Login,
+            Password = "1234",
+        };
 
-            var ex = await Assert.ThrowsAsync<BusinessException>(async () => await _mediator.Send<User>(command));
+        var ex = await Assert.ThrowsAsync<BusinessException>(async () => await _mediator.Send<User>(command));
 
-            Assert.NotEmpty(ex.Message);
-        }
+        Assert.NotEmpty(ex.Message);
+    }
+
+    [Fact]
+    public async Task SafeDeleteUserTest()
+    {
+        var command = new DeleteUserCommand(UsersTestData.DeletionUserDocument.Id);
+
+        var result = await _mediator.Send<User>(command);
+
+        Assert.NotNull(result);
+        Assert.True(result.IsArchived);
+    }
 }

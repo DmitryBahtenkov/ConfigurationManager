@@ -19,4 +19,19 @@ public static class UsersTestData
             };
         }
     }
+
+    public static User DeletionUserDocument
+    {
+        get
+        {
+            PasswordHelper.GeneratePassword("1234", out var hash, out var salt);
+            return new User 
+            {
+                Id = 2,
+                Password = hash,
+                Salt = salt,
+                Login = "testtt@test.test"
+            };
+        }
+    }
 }

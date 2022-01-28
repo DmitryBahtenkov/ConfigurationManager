@@ -1,4 +1,5 @@
 using ConfigurationManager.Core.Contract.Configurations;
+using ConfigurationManager.Core.Contract.Models;
 using ConfigurationManager.Core.Contract.Projects;
 using ConfigurationManager.Core.Contract.Users;
 using Microsoft.EntityFrameworkCore;
@@ -13,4 +14,5 @@ public interface IContext
 
     public Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
 
+    public DbSet<TEntity> Set<TEntity>() where TEntity : class;
 }

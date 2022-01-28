@@ -17,6 +17,7 @@ public class Startup
         services.AddDbContext<IContext, TestContext>();
         services.AddMediatR(Assembly.Load("ConfigurationManager.Tests"));
         services.AddMediatR(Assembly.Load("ConfigurationManager.Core"));
-        services.AddScoped<ICommandHandler<CreateUserCommand, User>, CreateUserHandler>();
+        services.AddMediatR(Assembly.Load("ConfigurationManager.Core.Contract"));
+        services.AddMediatR(Assembly.Load("ConfigurationManager.Framework"));
     }
 }

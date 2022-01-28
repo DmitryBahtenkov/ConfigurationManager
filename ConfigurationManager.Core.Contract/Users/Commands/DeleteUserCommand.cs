@@ -7,4 +7,4 @@ using ConfigurationManager.Framework.CQRS;
 
 namespace ConfigurationManager.Core.Contract.Users.Commands;
 
-public record DeleteUserCommand([Required] string Id) : ICommand<User>;
+public record DeleteUserCommand([Required] int Id) : ICommand<User>;

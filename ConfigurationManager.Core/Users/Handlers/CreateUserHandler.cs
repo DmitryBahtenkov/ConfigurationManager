@@ -19,7 +19,7 @@ public class CreateUserHandler : ICommandHandler<CreateUserCommand, User>
 
     public async Task<User> Handle(CreateUserCommand request, CancellationToken cancellationToken)
     {
-        var existUser = await _context.Users.FirstOrDefaultAsync(x => x.Login == request.Login);
+        var existUser = await _context.Users.FirstOrDefaultAsync(x => x.Login == request.Login && !x.IsArchived);
         if(existUser is not null)
         {
             throw new BusinessException("Такой пользователь уже существует");
