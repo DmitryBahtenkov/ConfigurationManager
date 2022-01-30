@@ -1,0 +1,26 @@
+@page
+@model ConfigurationManager.WebApp.Pages.Accounts.Create
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+    <h2>Создать пользователя</h2>
+    <form method="post" asp-anti-forgery="true">
+        <div class="validation" asp-validation-summary="ModelOnly"></div>
+        <div>
+            <div class="form-group">
+                <label>Логин: </label><br />
+                <input class="form-control" type="text" asp-for="Command.Login" style="max-width: 30%;"/>
+                <span class="field-validation-valid" data-valmsg-for="Command.Login" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <label>Пароль:</label><br />
+                <input class="form-control" type="password" asp-for="Command.Password" style="max-width: 30%;"/>
+                <span class="field-validation-valid" data-valmsg-for="Command.Password" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Создать" class="btn btn-primary" />
+            </div>
+    </form>
+</div>

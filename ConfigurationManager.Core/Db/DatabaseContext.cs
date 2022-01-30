@@ -4,6 +4,7 @@ using ConfigurationManager.Core.Contract.Database;
 using ConfigurationManager.Core.Contract.Models;
 using ConfigurationManager.Core.Contract.Projects;
 using ConfigurationManager.Core.Contract.Users;
+using ConfigurationManager.Core.Helpers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
@@ -26,6 +27,11 @@ public class DatabaseContext : DbContext, IContext
         return await base.SaveChangesAsync(cancellationToken);
     }
 
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.UseNpgsql("User ID=postgres;Password=postgres;Host=localhost;Port=5432;Database=Configurations;");
+    }
+
     protected EntityEntry EnrichEntry(EntityEntry entry)
     {
         var entity = (BaseModel) entry.Entity;
@@ -38,11 +44,15 @@ public class DatabaseContext : DbContext, IContext
         return entry;
     }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    { }
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        //modelBuilder.Entity<User>().HasData(new User { Id = 2 });
+        PasswordHelper.GeneratePassword("default", out var hash, out var salt);
+        modelBuilder.Entity<User>().HasData(new User 
+        { 
+            Id = 1,
+            Login = "default",
+            Password = hash,
+            Salt = salt
+        });
     }
 }

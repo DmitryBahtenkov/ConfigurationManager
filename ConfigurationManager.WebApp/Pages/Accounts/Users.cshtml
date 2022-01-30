@@ -1,0 +1,31 @@
+@page
+@using Core.Contract.Users
+@model ConfigurationManager.WebApp.Pages.Accounts.Users
+@{
+    ViewData["Title"] = "Users";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <p><a asp-page="Create">Добавить пользователя</a></p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Имя</th>
+                <th>.</th>
+                <th>.</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var person in Model?.UsersList ?? new List<User>())
+            {
+                <tr>
+                    <td>@person.Login</td>
+                    <td><p><a class="btn btn-success" asp-page="Update">Редактировать пользователя</a></p></td>
+                    <td><form method="post"><input type="submit" value="Удалить" class="btn btn-danger"/></form></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

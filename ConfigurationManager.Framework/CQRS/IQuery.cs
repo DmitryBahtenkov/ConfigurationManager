@@ -6,4 +6,4 @@ using MediatR;
 
 namespace ConfigurationManager.Framework.CQRS;
 public interface IQuery<out TQueryResult> : IRequest<TQueryResult> { }
-interface IQueryHandler<in TQuery, TQueryResult> : IRequestHandler<TQuery, TQueryResult> where TQuery : IQuery<TQueryResult> { }
+public interface IQueryHandler<in TQuery, TQueryResult> : IRequestHandler<TQuery, TQueryResult> where TQuery : IQuery<TQueryResult> { }
